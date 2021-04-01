@@ -11,6 +11,13 @@
 		C7325FF726121670009C6C9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7325FF626121670009C6C9A /* ContentView.swift */; };
 		C7325FF926121671009C6C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7325FF826121671009C6C9A /* Assets.xcassets */; };
 		C7325FFC26121671009C6C9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7325FFB26121671009C6C9A /* Preview Assets.xcassets */; };
+		C789607226164C8B00158F54 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789607126164C8B00158F54 /* HomeView.swift */; };
+		C789607526164CC700158F54 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789607426164CC700158F54 /* ChatView.swift */; };
+		C789607A26164D1700158F54 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789607926164D1700158F54 /* AddView.swift */; };
+		C789607D26164D3B00158F54 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789607C26164D3B00158F54 /* CalendarView.swift */; };
+		C789608026164D4300158F54 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789607F26164D4300158F54 /* SettingsView.swift */; };
+		C789608326164E0000158F54 /* DismissButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C789608226164E0000158F54 /* DismissButton.swift */; };
+		C7C805BA26164ABC008FB3B8 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C805B926164ABC008FB3B8 /* TabItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		C7325FF826121671009C6C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7325FFB26121671009C6C9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C7325FFD26121671009C6C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C789607126164C8B00158F54 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C789607426164CC700158F54 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C789607926164D1700158F54 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		C789607C26164D3B00158F54 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		C789607F26164D4300158F54 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		C789608226164E0000158F54 /* DismissButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissButton.swift; sourceTree = "<group>"; };
+		C7C805B926164ABC008FB3B8 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +66,10 @@
 		C7325FF326121670009C6C9A /* TabBarSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C7C805BC26164AC8008FB3B8 /* Model */,
+				C789608526164F3A00158F54 /* Helpers */,
 				C7325FF426121670009C6C9A /* TabBarSwiftUIApp.swift */,
-				C7325FF626121670009C6C9A /* ContentView.swift */,
+				C7C805BE26164ACE008FB3B8 /* View */,
 				C7325FF826121671009C6C9A /* Assets.xcassets */,
 				C7325FFD26121671009C6C9A /* Info.plist */,
 				C7325FFA26121671009C6C9A /* Preview Content */,
@@ -67,6 +83,43 @@
 				C7325FFB26121671009C6C9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C789607726164CEE00158F54 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				C789607126164C8B00158F54 /* HomeView.swift */,
+				C789607426164CC700158F54 /* ChatView.swift */,
+				C789607926164D1700158F54 /* AddView.swift */,
+				C789607C26164D3B00158F54 /* CalendarView.swift */,
+				C789607F26164D4300158F54 /* SettingsView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		C789608526164F3A00158F54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C789608226164E0000158F54 /* DismissButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C7C805BC26164AC8008FB3B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C7C805B926164ABC008FB3B8 /* TabItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7C805BE26164ACE008FB3B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C7325FF626121670009C6C9A /* ContentView.swift */,
+				C789607726164CEE00158F54 /* Screens */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C789607D26164D3B00158F54 /* CalendarView.swift in Sources */,
+				C789607226164C8B00158F54 /* HomeView.swift in Sources */,
+				C789607A26164D1700158F54 /* AddView.swift in Sources */,
 				C7325FF726121670009C6C9A /* ContentView.swift in Sources */,
+				C7C805BA26164ABC008FB3B8 /* TabItem.swift in Sources */,
+				C789608026164D4300158F54 /* SettingsView.swift in Sources */,
+				C789608326164E0000158F54 /* DismissButton.swift in Sources */,
 				C7325FF526121670009C6C9A /* TabBarSwiftUIApp.swift in Sources */,
+				C789607526164CC700158F54 /* ChatView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
